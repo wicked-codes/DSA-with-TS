@@ -6,6 +6,7 @@
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "tsc",
+    "dev": "tsc && node ./build/src/index.js",
     "fix": "gts fix",
     "prepare": "npm.cmd run compile",
     "pretest": "npm.cmd run compile",

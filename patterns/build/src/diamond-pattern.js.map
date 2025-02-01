@@ -1,0 +1,1 @@
+{"version":3,"file":"diamond-pattern.js","sourceRoot":"","sources":["../../src/diamond-pattern.ts"],"names":[],"mappings":";;AAAA,mFAAyE;AACzE,mEAA0D;AAE1D,MAAM,cAAc,GAAG,CAAC,MAAc,EAAU,EAAE;IAC9C,IAAI,aAAa,GAAG,EAAE,CAAC;IACvB,aAAa,IAAI,IAAA,+BAAmB,EAAC,MAAM,CAAC,CAAC;IAC7C,aAAa,IAAI,IAAA,uCAA0B,EAAC,MAAM,CAAC,CAAA;IACnD,OAAO,aAAa,CAAA;AACxB,CAAC,CAAA;AAED,kBAAe,cAAc,CAAC"}

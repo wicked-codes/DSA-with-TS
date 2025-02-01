@@ -1,5 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const area_pattern_1 = require("./area-pattern");
+const triangle_pattern_1 = require("./triangle-pattern");
+const triangle_number_pattern_1 = require("./triangle-number-pattern");
+const triangle_number_pattern_column_1 = require("./triangle-number-pattern-column");
+const triangle_pattern_reverse_1 = require("./triangle-pattern-reverse");
+const centered_odd_triangle_1 = require("./centered-odd-triangle");
+const centered_flipped_odd_triangle_1 = require("./centered-flipped-odd-triangle");
+const diamond_pattern_1 = require("./diamond-pattern");
+const base_triangle_on_left_1 = require("./base-triangle-on-left");
 console.log((0, area_pattern_1.default)(4, 5));
+console.log((0, triangle_pattern_1.default)(5));
+console.log((0, triangle_number_pattern_1.default)(5));
+console.log((0, triangle_number_pattern_column_1.default)(5));
+console.log((0, triangle_pattern_reverse_1.default)(5));
+console.log((0, centered_odd_triangle_1.default)(6));
+console.log((0, centered_flipped_odd_triangle_1.default)(6));
+console.log((0, diamond_pattern_1.default)(6));
+console.log((0, base_triangle_on_left_1.default)(6));
 //# sourceMappingURL=index.js.map
