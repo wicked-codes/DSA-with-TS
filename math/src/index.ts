@@ -2,6 +2,8 @@ import {countNumberOfDigits_logN, reverse} from "./number";
 import {checkPalindrome} from "./palindrome";
 import {getHCF, getLCM} from "./hcf_lcm";
 import {isArmstrongNumber} from "./armstrong";
+import {getDivisors} from "./divisors";
+console.log('Divisors: ', getDivisors(69420));
 console.log('Armstrong Numbers: ', isArmstrongNumber(69420));
 console.log('HCF: ',getHCF(69,420));
 console.log('LCM: ', getLCM(69,420));
