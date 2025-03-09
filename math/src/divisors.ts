@@ -1,3 +1,5 @@
+import { get } from "node:http";
+
 const getDivisors = (n: number): number[] => {
     const divisors: number[] = [];
     const threshold = Math.floor(Math.sqrt(n));
@@ -10,4 +12,11 @@ const getDivisors = (n: number): number[] => {
     return divisors;
 }
 
-export {getDivisors};
+const checkIfPrime = (n: number): boolean => {
+    if(getDivisors(n).length === 2){
+        return true;
+    }
+    return false;
+}
+
+export {getDivisors, checkIfPrime};
