@@ -7,6 +7,40 @@ const getSmallestOfTheArray = (input:number[]): number[] =>{
 	}
 	return smallest;
 }
+
+const getGreatestOfTheArray = (input:number[]): number[] =>{
+	let greatest = [-Infinity, 0];
+	let count = 0;
+	const greatMap = {};
+	for(let i = 0; i < input.length; i++ ){
+		if(input[i] > greatest[0]){
+			greatest = [input[i], i];
+			greatMap[count] = input[i];
+			count++;
+		}
+	}
+	return greatest;
+}
+
+const getNthGreatestOfTheArray = (input:number[], n:number): number[] =>{
+	let greatest = [-Infinity, 0];
+	let count = 0;
+	const greatMap = {};
+	for(let i = 0; i < input.length; i++ ){
+		if(input[i] > greatest[0]){
+			greatest = [input[i], i];
+			greatMap[count] = greatest;
+			count++;
+		}
+	}
+	const values = Object.values(greatMap);
+	if(n > 0 && n < input.length){
+		return values[values.length-n];
+	}
+
+	return greatest;
+}
+
 const selectionSort = (input: number[]) : number[]=>{
 	if(!(input.length >= 1)){
 		return input;
